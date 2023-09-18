@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     
+   <%- include('../partials/head.ejs'); %>
+
+   <title><%= word.replace(/-/g, ' ') %> %>- শব্দের বাংলা অর্থ at WordMeaningIndia.com</title>
+   <meta name="keyword" content="<%= word.replace(/-/g, ' ') %> %> শব্দের বাংলা অর্থ, বাংলা অভিধান, বাংলা শব্দের অর্থ, <%= word.replace(/-/g, ' ') %> %> এর মানে কি " />
+   <meta name="description" content="<%= word.replace(/-/g, ' ') %> %>অর্থ <%- info.meaning %> , অনলাইন বাংলা অভিধান। <%= word.replace(/-/g, ' ') %> %> meaning in hindi.">
+   
+   <meta property="og:title" content="<%= word.replace(/-/g, ' ') %> %>- শব্দের বাংলা অর্থ at WordMeaningIndia.com" />
+    <meta property="og:url" content="https://wordmeaningindia.com/hindi-to-hindi/<%= word%>" />
+    <meta property="og:description" content="<%= word.replace(/-/g, ' ') %> %>অর্থ <%- info.meaning %> । অনলাইন বাংলা অভিধান। <%= word.replace(/-/g, ' ') %> %> meaning in hindi." />
+    <meta property="og:site_name" content="WordMeaningIndia.com" />
+
+   <link rel="canonical" href="https://wordmeaningindia.com/hindi-to-hindi/<%= word%>">
+
+   <%- include('../partials/css.ejs'); %>
+
+   <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://wordmeaningindia.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://wordmeaningindia.com/hindi-to-hindi/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+
+
+<body>
+    <%- include('../partials/header_nav.ejs'); %>
+
+    <div class="area">
+        <div class="word-search">
+            <div class="home-page-header-title">
+                hindi to hindi Dictionary
+              </div>
+            <form method="get" action="">
+                <label>
+                    <input type="text" name="query" id="query" value="<%= word.replace(/-/g, ' ') %>" placeholder="Type Word...">
+                </label>
+                <button>Search</button>
+            </form>
+        </div>
+
+        <div class="next-prev">
+            <span class="prev"><a href="/hindi-to-hindi/<%= info.prev %>"> << <%= info.prev.replace(/-/g, ' ') %></a> </span>
+            <span class="next"><a href="/hindi-to-hindi/<%= info.next %>">  <%= info.next.replace(/-/g, ' ') %> >></a></span>
+        </div>
+
+        <!--meaning output section-->
+        <div class="main">
+            <div class="meaning outputs">
+                <h1><%= word.replace(/-/g, ' ') %> Meaning in hindi</h1><br>
+    
+                <!-- <h2><%= info%></h2> -->
+                <% if(info.meaning){%>
+                 <span class="main-meaning"><%- info.meaning
+                    .replace(/।/g, '।<br>')
+                    .replace("/","(")
+                    .replace("/",")")
+                    .replace(";",",")
+                     %></span>
+                <% } %>
+            </div>
+
+            <% if(info.more_meaning){%>
+            <div class="outputs">
+                    <h2><%= word.replace(/-/g, ' ') %> এর বাংলা অর্থ</h2>
+                    <p><%- info.more_meaning.replace(/\n/g, '<br><br>') %></p>
+            </div>
+            <% } %>
+
+
+            <% if(info.similer_words){%>
+            <div class="similer-words outputs">
+                    <h2>এমন আরো কিছু শব্দ</h2>
+                    <%let similer = info.similer_words.split("\n");%>
+                    <% similer.forEach((element,i) => { %>
+                        <%- `<a href="/hindi-to-hindi/${element}">${element.replace(/-/g, ' ')}</a><br>` %>
+                    <% } )%>
+            </div>
+            <% } %>
+
+
+            <% if(info.example){%>
+            <div class="outputs">
+                    <h2><%= word %> এর ব্যাবহার ও উদাহরণ</h2>
+                    <!-- <p><%- info.example.replace(/\n/g, '<br><br>') %></p> -->
+                    <% let example = info.example.split("\n") %>
+                    <% let out = [...new Set(example)]; %>
+                    <% out.forEach((element,i) => { %>
+                        <p><%- element.replace(/&/g,'"').replace("$","'").replace("$","'") %></p><br>
+                    <% } )%>
+            </div>
+            <% } %>
+
+
+            <div class="othersite outputs">
+                <h2><span class="main-word"><%= word.replace(/-/g, ' ') %></span> Meaning in Other Sites </h2>
+                <ul>
+                    <li><a href="https://translate.google.com/#auto/bn/<%= word%>" rel="noopener" target="_blank">Google Translate</a></li>
+                    <li><a href="https://bn.wikipedia.org/wiki/<%= word%>" rel="noopener" target="_blank">Wikipedia</a></li>
+
+                </ul>
+            </div>
+
+            <!-- below main dev ends -->
+        </div>
+
+
+        <aside>
+            <div class="box">
+                <div class="head">
+                    <h3>Top Words of This Week</h3>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-hindi/অকন্টক">অকন্টক</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-hindi/অঙ্গিকা">অঙ্গিকা</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-hindi/গড়নদার">গড়নদার</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-hindi/মিতাক্ষর">মিতাক্ষর</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+
+        <%- include('../partials/footer.ejs'); %>
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle() {
+            var test = document.getElementById("navbar");
+            if (test.className == "hidden") {
+                test.className = "show";
+            } else {
+                test.className = "hidden";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
+

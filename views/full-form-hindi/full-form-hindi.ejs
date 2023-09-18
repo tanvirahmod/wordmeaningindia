@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <%- include('../partials/head.ejs'); %>
+
+   <title><%= word.replace(/-/g, ' ').toUpperCase() %> Full Form in Hindi (<%= word.replace(/-/g, ' ').toUpperCase() %> का पूरा नाम क्या है) at wordmeaningindia.com</title>
+   <meta name="keyword" content="<%= word.replace(/-/g, ' ').toUpperCase() %></b> का पूर्ण रूप या पूरा नाम, Acronyms, Abbreviations" />
+   <meta name="description" content="यहाँ <%= word.replace(/-/g, ' ').toUpperCase() %> का फुल फॉर्म दिया गया है।">
+   
+   <meta property="og:title" content="<%= word.replace(/-/g, ' ').toUpperCase() %></b> का पूर्ण रूप या पूरा नाम, Acronyms, Abbreviations" />
+    <meta property="og:url" content="https://wordmeaningindia.com/full-form-hindi/<%= word%>" />
+    <meta property="og:description" content="यहाँ <%= word.replace(/-/g, ' ').toUpperCase() %> का फुल फॉर्म दिया गया है।" />
+    <meta property="og:site_name" content="wordmeaningindia.com" />
+
+   <link rel="canonical" href="https://wordmeaningindia.com/full-form-hindi/<%= word%>">
+   
+   <%- include('../partials/css.ejs'); %>
+
+   <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://wordmeaningindia.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://wordmeaningindia.com/full-form-hindi/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <h1> <a href="/">Word Meaning India</a> </h1>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="button">
+            <p onclick="toggle()">MENUS ︾</p>
+        </div>
+        <ul id="navbar" class="hidden">
+            <li><a href="/meaning-in-hindi" class="active one">English to Hindi</a></li>
+            <li><a href="/hindi-to-english" class="active two">Hindi to English</a></li>
+            <li><a href="/hindi-to-hindi" class="active three">Hindi to Hindi</a></li>
+            <li><a href="/full-form-hindi" class="active three">Full Form</a></li>
+        </ul>
+    </nav>
+
+
+<center>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- fullFormHead -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="5168754285"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+
+    <div class="area">
+        <div class="word-search">
+            
+            <div class="home-page-header-title">
+                Search Abbreviations
+              </div>
+            <form method="get" action="">
+                <label>
+                    <input type="text" name="query" id="query" value="<%= word.replace(/-/g, ' ') %>" placeholder="Type Word...">
+                </label>
+                <button>Search</button>
+            </form>
+        </div>
+
+        <div class="next-prev">
+            <% if(similerAcronym.length == 33){%>
+                <span class="prev"><a href="/full-form-hindi/<%= similerAcronym[15].shortform %>"> << <%= similerAcronym[15].shortform.replace(/-/g, ' ') %></a> </span>
+            <% } %>
+            <% if(similerAcronym.length == 33){%>
+                <span class="next"><a href="/full-form-hindi/<%= similerAcronym[17].shortform %>">  <%= similerAcronym[17].shortform.replace(/-/g, ' ') %> >></a></span>
+            <% } %>
+
+        </div>
+        <!--meaning output section-->
+        <div class="main">
+            <div id="MostUsedFullForm" class="meaning outputs">
+                <h1><%= word.replace(/-/g, ' ').toUpperCase() %> Full Form in Hindi (<%= word.replace(/-/g, ' ').toUpperCase() %> का पूरा नाम क्या है)</h1><br>
+                <% if(one.shortform){%>
+                 <p><span class="main-meaning"><b><%= word.replace(/-/g, ' ').toUpperCase() %></b> का पूर्ण रूप या पूरा नाम <b><%- one.fullform.replace(/-/g, ' ')%></b> सबसे अधिक इस्तेमाल किया जा रहा है जिसका उपयोग <%- one.category.replace(" -- and more...","") %> खंड में किया जाता है।</span></p>
+                <% } %>
+                
+                <center>
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+                         crossorigin="anonymous"></script>
+                    <!-- fullFormArticle -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4942404864764189"
+                         data-ad-slot="1037937589"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </center>
+            </div>
+
+<!-- Table of Content Starts -->
+<br>
+<div class="post-navigation">
+    <div class="nav-title">Table of Contents</div>
+    <ul>
+        <li><a title="MostUsedFullForm" href="#MostUsedFullForm">Most Used Full Form</a></li>
+        <li><a title="MoreFullForms" href="#MoreFullForms">More Full Forms of <%= word.replace(/-/g, ' ').toUpperCase() %></a></li>
+        <li><a title="SimilerFullForms" href="#SimilerFullForms">Similar Full Form</a></li>
+        <li><a title="onOtherSites" href="#onOtherSites">Full Form on Other Sources</a></li>
+    </ul>
+</div>
+<br>
+<!-- Table of Content Ends -->
+
+            <div id="MoreFullForms" class="othersite outputs">
+                <h2><span class="main-word"><%= word.replace(/-/g, ' ').toUpperCase() %></span> के कुछ और पूर्ण नाम या फुल फॉर्म अन्य श्रेणियों में उपयोग किए जाते हैं</h2>
+                <p>अगर आप ऊपर दी गई पूर्ण नाम के अलावा और कोई पूर्ण नाम ढूंढ रहे हैं तो नीचे दी गई पूर्ण नाम को पढ़ सकते हैं</p>
+                
+             
+             <center>
+                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+                     crossorigin="anonymous"></script>
+                <!-- fullFormArticle -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-4942404864764189"
+                     data-ad-slot="1037937589"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+             </center>
+             
+                <% for (let element of all) {%>
+                    <div style="line-height: 25px;background-color: #F5F5F5; border-radius: 10px; padding: 10px; margin-top: 10px; color: black;">
+                        <%- `<b>Short Form :</b> ${element.shortform}<br>` %>
+                        <%- `<b>Full Form :</b> ${element.fullform}<br>` %>
+                        <%- `<b>Category :</b> ${element.category}<br>` %>
+                    </div>
+                <% } %>
+            </div>
+
+
+
+            <div id="SimilerFullForms" class="othersite outputs" style="display: block; ">
+                <h2><span class="main-word"><%= word.replace(/-/g, ' ').toUpperCase() %></span> ऐसा कुछ और फुल फॉर्म </h2>
+                
+                <% for (let element of similerAcronym) {%>
+                        <%- `<a style="line-height: 25px;" href="/full-form-hindi/${element.shortform}">${element.shortform.replace("-"," ")} का पूर्ण रूप</a><br>` %>
+                <% } %>
+            </div>
+
+
+
+            <div id="onOtherSites" class="othersite outputs">
+                <h3><span class="main-word">External Link of <%= word.replace(/-/g, ' ').toUpperCase() %></span></h3>
+                <ul>
+                    <li><a href="https://acronyms.thefreedictionary.com/<%= word%>" rel="noopener" target="_blank">TheFreeDictionary</a></li>
+                    <li><a href="https://www.abbreviations.com/<%= word%>" rel="noopener" target="_blank">abbreviations.com</a></li>
+                </ul>
+            </div>
+
+
+            <!-- below main dev ends -->
+        </div>
+
+
+        <aside>
+            <div class="box">
+                <div class="head">
+                    <h3>Top Acronyms of This Week</h3>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li> <a href="/full-form-hindi/VCD">VCD का पूर्ण रूप</a> </li>
+                        <li> <a href="/full-form-hindi/EBCDIC">EBCDIC का पूर्ण रूप</a> </li>
+                        <li> <a href="/full-form-hindi/AC">AC का पूर्ण रूप</a> </li>
+                        <li> <a href="/full-form-hindi/TMIS">TMIS का पूर्ण रूप</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+
+
+
+        <%- include('../partials/footer.ejs'); %>
+
+
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle() {
+            var test = document.getElementById("navbar");
+            if (test.className == "hidden") {
+                test.className = "show";
+            } else {
+                test.className = "hidden";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
+

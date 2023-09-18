@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     
+   <%- include('../partials/head.ejs'); %>
+
+   <title><%= word.replace(/-/g, ' ') %> Meaning in English - English Meaning of <%= word.replace(/-/g, ' ') %> | <%= word.replace(/-/g, ' ') %> शब्द का अंग्रेजी अर्थ at wordmeaningindia.com</title>
+   <meta name="keyword" content="<%= word.replace(/-/g, ' ') %> %> शब्द का अंग्रेजी अर्थ, हिन्दी शब्दकोश, हिंदी से अंग्रेजी, <%= word.replace(/-/g, ' ') %> %> इसका अंग्रेजी क्या है " />
+   <meta name="description" content="<%= word.replace(/-/g, ' ') %> %> अंग्रेजी अर्थ  , ऑनलाइन हिंदी से अंग्रेजी शब्दकोश। <%= word.replace(/-/g, ' ') %> %> meaning in English.">
+   
+   <meta property="og:title" content="<%= word.replace(/-/g, ' ') %> Meaning in English - English Meaning of <%= word.replace(/-/g, ' ') %> | <%= word.replace(/-/g, ' ') %> शब्द का अंग्रेजी अर्थ at wordmeaningindia.com" />
+    <meta property="og:url" content="https://wordmeaningindia.com/hindi-to-english/<%= word%>" />
+    <meta property="og:description" content="<%= word.replace(/-/g, ' ') %> शब्द का अंग्रेजी अर्थ at wordmeaningindia.com" />
+    <meta property="og:site_name" content="wordmeaningindia.com" />
+
+   <link rel="canonical" href="https://wordmeaningindia.com/hindi-to-english/<%= word%>">
+
+   <%- include('../partials/css.ejs'); %>
+
+   <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://wordmeaningindia.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://wordmeaningindia.com/hindi-to-english/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+
+
+<body>
+    <%- include('../partials/header_nav.ejs'); %>
+
+    <div class="area">
+        <div class="word-search">
+            <div class="home-page-header-title">
+                Hindi to English Dictionary
+              </div>
+            <form method="get" action="">
+                <label>
+                    <input type="text" name="query" id="query" value="<%= word.replace(/-/g, ' ') %>" placeholder="Type Word...">
+                </label>
+                <button>Search</button>
+            </form>
+        </div>
+
+        <div class="next-prev">
+            <span class="prev"><a href="/hindi-to-english/<%= info.prev_word %>"> << <%= info.prev.replace(/-/g, ' ') %></a> </span>
+            <span class="next"><a href="/hindi-to-english/<%= info.next_word %>">  <%= info.next_word.replace(/-/g, ' ') %> >></a></span>
+        </div>
+
+        <!--meaning output section-->
+        <div class="main">
+            <div class="meaning outputs">
+                <h1><%= word.replace(/-/g, ' ') %> Meaning in English</h1><br>
+    
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_after_title -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9211312476"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+<br>       
+       
+                
+                
+                <!-- <h2><%= info%></h2> -->
+                        <% if(info.meaning_one){%>
+                            <i><b><%= word.replace(/-/g, ' ') %> शब्द का अंग्रेजी अर्थ </b>:</i>
+                            <span class="main-meaning"><%- info.meaning_one %></span><br>
+                        <% } %>
+
+                        <% if(info.meaning_two){%>
+                            <span class="main-meaning">, <%- info.meaning_two %></span>
+                        <% } %>
+                <% if(info.meaning){%>
+                 <span class="main-meaning"><%- info.meaning %></span>
+                <% } %>
+            </div>
+
+
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_Mid_1 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="8668510701"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+
+
+
+            <% if(info.similer_words){%>
+            <div class="similer-words outputs">
+                    <h2>ऐसे ही कुछ और शब्द</h2>
+                    <%let similer = info.similer_words.split("\n");%>
+                    <% similer.forEach((element,i) => { %>
+                        <%- `<a href="/hindi-to-english/${element}">${element.replace(/-/g, ' ')}</a><br>` %>
+                    <% } )%>
+            </div>
+            <% } %>
+
+
+            <% if(info.english_example_one){%>
+                <% if(!(info.english_example_one.length < 4)){%>
+                <div class="outputs">
+                        <h2><%= word %> इसके अंग्रेजी अर्थ का उदाहरण</h2>
+                        
+                        <% let example = info.english_example_one.split("\n") %>
+                        <% let out = [...new Set(example)]; %>
+                        <% out.forEach((element,i) => { %>
+                            <p><%- element.replace(/&/g,'"').replace("$","'").replace("$","'") %></p><br>
+                        <% } )%>
+                </div>
+                <% } %>
+            <% } %>
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9790483702"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+            <% if(info.hindi_example){%>
+            <div class="outputs">
+                    <h2><%= word %> हिंदी उपयोग और उदाहरण</h2>
+                    <% let example = info.hindi_example.split("\n") %>
+                    <% let out = [...new Set(example)]; %>
+                    <% out.forEach((element,i) => { %>
+                        <p><%- element.replace(/&/g,'"').replace("$","'").replace("$","'") %></p><br>
+                    <% } )%>
+                    
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_Mid_2 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="2340767891"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+                    
+                    
+            </div>
+            <% } %>
+
+            <% if(info.english_example_two){%>
+                <% if(!(info.english_example_two.length < 4)){%>
+                <div class="outputs">
+                        <h2><%= word %> इसके अंग्रेजी अर्थ का उदाहरण</h2>
+                        <% let example = info.english_example_two.split("\n") %>
+                        <% let out = [...new Set(example)]; %>
+                        <% out.forEach((element,i) => { %>
+                            <p><%- element.replace(/&/g,'"').replace("$","'").replace("$","'") %></p><br>
+                        <% } )%>
+
+                </div>
+
+
+
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_Mid_2 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="2340767891"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+
+
+                <% } %>
+            <% } %>
+
+
+            <div class="othersite outputs">
+                <h2><span class="main-word"><%= word.replace(/-/g, ' ') %></span> Meaning in Other Sites </h2>
+                <ul>
+                    <li><a href="https://translate.google.com/#auto/en/<%= word%>" rel="noopener" target="_blank">Google Translate</a></li>
+                    <li><a href="https://bn.wikipedia.org/wiki/<%= word%>" rel="noopener" target="_blank">Wikipedia</a></li>
+
+                </ul>
+            </div>
+
+
+
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_Mid_2 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="2340767891"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+
+
+            <!-- below main dev ends -->
+        </div>
+
+
+        <aside>
+            <div class="box">
+                <div class="head">
+                    <h3>Top Words of This Week</h3>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-english/अच्छा">अच्छा</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-english/जयंती">जयंती</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-english/इसका">इसका</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-english/गाँव">गाँव</a> </li>
+                    </ul>
+                </div>
+            </div>
+            
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_sitebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9819092222"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+            
+        </aside>
+
+
+        <%- include('../partials/footer.ejs'); %>
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle() {
+            var test = document.getElementById("navbar");
+            if (test.className == "hidden") {
+                test.className = "show";
+            } else {
+                test.className = "hidden";
+            }
+        }
+        
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
+

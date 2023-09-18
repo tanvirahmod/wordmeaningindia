@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WordMeaningIndia | The Largest Indian Online Word Dictionary</title>
+    <meta name="description"
+        content="WordMeaningIndia | Word Meaning With Noun, Verb, Adjective, Adverb and Other Information About Word.">
+    <link rel="canonical" href="https://wordmeaningindia.com" />
+    <%- include('./partials/head.ejs'); %>
+        <%- include('./partials/css.ejs'); %>
+</head>
+
+
+<body>
+    <%- include('partials/header_nav.ejs'); %>
+
+        <div class="area">
+            <div class="word-search">
+                <div class="home-page-header-title">
+                    English, Hindi and Tamil Dictionary
+                </div>
+                <form method="get" action="">
+                    <label>
+                        <input type="text" name="query" id="query" placeholder="English to Hindi">
+                    </label>
+                    <button>Search</button>
+                </form>
+            </div>
+
+
+            <!--meaning output section-->
+            <div class="main">
+
+
+                <div class="othersite outputs">
+                    <h2> A Complate English, Hindi and Tamil Online Dictionary </h2>
+                    <p>We provide best and clear definition and meaning of your given word
+                    <p>
+                        <br>
+                    <p>Find your definition in below links
+                    <p><a href="https://wordmeaningindia.com/meaning-in-hindi">English to Hindi</a><br>
+                        <a href="https://wordmeaningindia.com/hindi-to-hindi">Hindi to Hindi</a><br>
+                        <a href="https://wordmeaningindia.com/hindi-to-english">Hindi to English</a><br>
+                        <a href="https://wordmeaningindia.com/hindi-to-french">Hindi to French</a>
+                        <br>
+                        <a href="https://wordmeaningindia.com/meaning-in-telugu">English to Telugu</a>
+                        <br>
+                        <a href="https://wordmeaningindia.com/meaning-in-marathi">English to Marathi</a>
+                        <br>
+                        <a href="https://wordmeaningindia.com/meaning-in-gujarati">English to Gujarati</a>
+                        <br>
+                         <a href="https://wordmeaningindia.com/meaning-in-kannada">English to Kannada</a>
+                        <br>
+                        <a href="https://wordmeaningindia.com/meaning-in-odia">English to Odia</a>
+                        <br> 
+                        <a href="https://wordmeaningindia.com/meaning-in-punjabi">English to Punjabi</a>
+                        <br> 
+                    <p>We are always working to add new words every week.</p>
+
+                </div>
+
+
+
+
+                <!-- below main dev ends -->
+            </div>
+
+
+            <aside>
+                <div class="box">
+                    <div class="head">
+                        <h3>Top Words</h3>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li> <a href="https://WordMeaningIndia.com/meaning-in-hindi/justice">Justice</a> </li>
+                            <li> <a href="https://WordMeaningIndia.com/meaning-in-hindi/humble">Humble</a> </li>
+                            <li> <a href="https://WordMeaningIndia.com/meaning-in-hindi/winter">Winter</a> </li>
+                            <li> <a href="https://WordMeaningIndia.com/meaning-in-hindi/worm">worm</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+
+
+
+            <%- include('partials/footer.ejs'); %>
+
+
+
+
+        </div>
+
+
+        <script type="text/javascript">
+            function toggle() {
+                var test = document.getElementById("navbar");
+                if (test.className == "hidden") {
+                    test.className = "show";
+                } else {
+                    test.className = "hidden";
+                }
+            }
+
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+</body>
+
+</html>

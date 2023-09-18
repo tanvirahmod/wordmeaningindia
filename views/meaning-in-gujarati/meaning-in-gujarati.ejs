@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <%- include('../partials/head.ejs'); %>
+
+   <title><%= word.replace(/-/g, ' ') %> - Gujarati Meaning - <%= word.replace(/-/g, ' ') %> Meaning in Gujarati at wordmeaningindia.com | <%= word.replace(/-/g, ' ') %> શબ્દનો ગુજરાતી અર્થ </title>
+   <meta name="keyword" content="<%= word.replace(/-/g, ' ') %>, <%= word.replace(/-/g, ' ') %> gujarati meaning, <%= word.replace(/-/g, ' ') %> meaning, <%= word.replace(/-/g, ' ') %> શબ્દનો ગુજરાતી અર્થ, English to Gujarati, English to Gujarati Dictionary, antonyms, synonyms, શબ્દકોશ, 
+   અર્થશાસ્ત્ર શિક્ષણ, Words, Gujarati Academy Dictionary" />
+   <meta name="description" content="<%= word.replace(/-/g, ' ') %> meaning in gujarati - <%- info.main_meaning.replace(/-/g, ' ')%>; | <%= word.replace(/-/g, ' ') %> તેનું ગુજરાત શું છે?, What is the definition of <%= word.replace(/-/g, ' ') %> in gujarati? What is the meaning of <%= word.replace(/-/g, ' ') %> in gujarati?">
+   
+   <meta property="og:title" content="<%= word.replace(/-/g, ' ') %> - Gujarati Meaning - <%= word.replace(/-/g, ' ') %> Meaning in Gujarati at wordmeaningindia.com | <%= word.replace(/-/g, ' ') %> શબ્દનો ગુજરાતી અર્થ " />
+    <meta property="og:url" content="https://wordmeaningindia.com/meaning-in-gujarati/<%= word%>" />
+    <meta property="og:description" content="<%= word.replace(/-/g, ' ') %> meaning in gujarati - <%- info.main_meaning.replace(/-/g, ' ')%>; | <%= word.replace(/-/g, ' ') %> ગુજરાતી ભાષામાં આ શબ્દનો અર્થ શું છે?, What is the definition of <%= word.replace(/-/g, ' ') %> in gujarati? What is the meaning of <%= word.replace(/-/g, ' ') %> in gujarati?" />
+    <meta property="og:site_name" content="wordmeaningindia.com" />
+
+   <link rel="canonical" href="https://wordmeaningindia.com/meaning-in-gujarati/<%= word%>">
+   
+   <%- include('../partials/css.ejs'); %>
+
+   <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://wordmeaningindia.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://wordmeaningindia.com/meaning-in-gujarati/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+
+
+<body>
+    <%- include('../partials/header_nav.ejs'); %>
+
+    <div class="area">
+        <div class="word-search">
+            
+            <div class="home-page-header-title">
+                English to Gujarati Dictionary
+              </div>
+            <form method="get" action="">
+                <label>
+                    <input type="text" name="query" id="query" value="<%= word.replace(/-/g, ' ') %>" placeholder="Type Word...">
+                </label>
+                <button>Search</button>
+            </form>
+        </div>
+
+        <div class="next-prev">
+            <span class="prev"><a href="/meaning-in-gujarati/<%= partial.prev_word %>"> << <%= partial.prev_word.replace(/-/g, ' ') %></a> </span>
+            <span class="next"><a href="/meaning-in-gujarati/<%= partial.next_word %>">  <%= partial.next_word.replace(/-/g, ' ') %> >></a></span>
+        </div>
+        <!--meaning output section-->
+        <div class="main">
+            <div class="meaning outputs">
+                <h1><%= word.replace(/-/g, ' ') %> Meaning in gujarati ( <%= word.replace(/-/g, ' ') %> ગુજરાતી ભાષામાં આ શબ્દનો અર્થ શું છે?) </h1><br>
+                
+                
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_after_title -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9211312476"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<br>                
+                
+                
+                <% if(info.main_meaning){%>
+                 <span class="main-meaning"><%- info.main_meaning
+                    .replace(/-/g, ' ')%></span>
+                <% } %>
+            </div>
+
+            <% if(info.translate_meaning){%>
+                <div class="outputs">
+                     <p><%- info.translate_meaning %></p>
+                </div>
+            <% } %>
+
+            <% if(info.noun){%>
+            <div class="outputs">
+                <h2>Noun:</h2>
+                 <p><%- info.noun %></p>
+            </div>
+            <% } %>
+
+            <% if(info.verb){%>
+            <div class="outputs">
+                <h2>Verb:</h2>
+                 <p><%- info.verb %></p>
+            </div>
+            <% } %>
+
+            <% if(info.adjective){%>
+            <div class="outputs">
+                <h2>Adjective:</h2>
+                 <p><%- info.adjective %></p>
+            </div>
+            <% } %>
+
+            <% if(info.determiner){%>
+            <div class="outputs">
+                <h2>Determiner:</h2>
+                 <p><%- info.determiner %></p>
+            </div>
+            <% } %>
+
+            <% if(info.adverb){%>
+                <div class="outputs">
+                    <h2>Adverb:</h2>
+                     <p><%- info.adverb %></p>
+                </div>
+            <% } %>
+
+            <% if(info.pronoun){%>
+                <div class="outputs">
+                    <h2>Pronoun:</h2>
+                     <p><%- info.pronoun %></p>
+                </div>
+            <% } %>
+
+            <% if(info.preposition){%>
+                <div class="outputs">
+                    <h2>Preposition:</h2>
+                     <p><%- info.preposition %></p>
+                </div>
+            <% } %>
+
+            <% if(info.conjunction){%>
+                <div class="outputs">
+                    <h2>Conjunction:</h2>
+                     <p><%- info.conjunction %></p>
+                </div>
+            <% } %>
+
+            <% if(info.interjection){%>
+                <div class="outputs">
+                    <h2>Interjection:</h2>
+                     <p><%- info.interjection %></p>
+                </div>
+            <% } %>
+
+            <% if(partial.similer_word){%>
+                <div class="similer-words outputs">
+                <h2> People Also Search:</h2>
+                <%let similer = partial.similer_word.split("\n");%>
+                <% similer.forEach((element,i) => { %>
+                <%- `<a href="/meaning-in-gujarati/${element}">${element.replace(/-/g, ' ')}</a><br>` %>
+                <% } )%>
+               
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_sitebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9819092222"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+               
+                </div>
+            <% } %>
+
+            <% if(info.gujarati_example.length > 2){%>
+                <div class="outputs">
+                    <h2><%= word.replace(/-/g, ' ') %> ગુજરાતી ભાષામાં ઉદાહરણ:</h2>
+                     <p><%- info.gujarati_example.replace(/\n/g, '<br><br>') %></p>
+              
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_sitebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9819092222"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>              
+              
+                </div>
+            <% } %>
+
+            <% if(partial.english_example){%>
+                <div class="outputs">
+                    <h2><%= word.replace(/-/g, ' ') %>'s Usage Examples:</h2>
+
+                    <% let example = partial.english_example.split("\n") %>
+                    <% let out = [...new Set(example)]; %>
+                    <% out.forEach((element,i) => { %>
+                    <p><%- element.replace(/&/g,'"').replace("$","'").replace("$","'") %></p><br>
+                    <% } )%>
+                    <!-- <p><%- partial.english_example.replace(/\n/g, '<br><br>') %></p> -->
+                </div>
+            <% } %>
+
+
+
+            <% if(partial.synonym){%>
+                <div class="outputs">
+                    <h2>Synonyms:</h2>
+                     <p><%- partial.synonym %></p>
+               
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_sitebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9819092222"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>               
+                </div>
+            <% } %>
+
+            <% if(partial.antonym){%>
+                <div class="outputs">
+                    <h2>Antonyms:</h2>
+                     <p><%- partial.antonym %></p>
+                </div>
+            <% } %>
+
+            <div class="othersite outputs">
+                <h2><span class="main-word"><%= word.replace(/-/g, ' ') %></span>'s Meaning in Other Sites </h2>
+                <ul>
+                    <li><a href="https://www.dictionary.com/browse/<%= word%>" rel="noopener" target="_blank">Dictinary</a></li>
+                    <li><a href="https://translate.google.com/#auto/gu/<%= word%>" rel="noopener" target="_blank">Google Translate</a></li>
+                    <li><a href="https://www.merriam-webster.com/dictionary/<%= word%>" rel="noopener" target="_blank">Merriam-Webster</a></li>
+                    <li><a href="https://www.oxfordlearnersdictionaries.com/definition/english/<%= word%>" rel="noopener" target="_blank">Oxford</a></li>
+                </ul>
+        
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_sitebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9819092222"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>        
+        
+            </div>
+
+
+            <!-- below main dev ends -->
+        </div>
+
+
+        <aside>
+            <div class="box">
+                <div class="head">
+                    <h3>Top Words of This Week</h3>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-gujarati/justice">Justice</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-gujarati/humble">Humble</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-gujarati/winter">Winter</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-gujarati/worm">Worm</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+
+
+
+        <%- include('../partials/footer.ejs'); %>
+
+
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle() {
+            var test = document.getElementById("navbar");
+            if (test.className == "hidden") {
+                test.className = "show";
+            } else {
+                test.className = "hidden";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.innerarea{
+  text-align: center;
+  max-width: 900px;
+  background-color: white;
+  padding: 16px;
+  margin: auto;
+}
+
+
+.innerarea .homebuttons{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.innerarea .header h1{
+  background-color: #2c3e50;
+  text-align: center;
+  width: 100%;
+  padding: 10px 1px;
+  cursor: pointer;
+}
+.innerarea .header a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.innerarea .header nav{
+  background-color: #34495e;
+  width: 100%;
+  line-height: 60px;
+}
+
+.innerarea .header nav a{
+  padding: 20px;
+  line-height: 40px;
+  color: black;
+  font-size: 20px;
+}
+
+
+
+.calculator {
+  width: 100%;
+  text-align: center;
+}
+
+.calculator .intro{
+  padding: 12px;
+  background-color: #34495e;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  margin-top: 30px;
+}
+
+.calculator .intro *{
+  padding: 5px;
+}
+
+ .calculator .boxes1{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   color: #fffff9;
+   flex-wrap: wrap;
+ }
+
+ .calculator .boxes1 .innerb{
+   background-color: #b9b9b9;
+   padding: 12px;
+   width: 265px;
+   height: 150px;
+   /* border-radius: 7px; */
+   margin: 10px;
+   font-weight: bold;
+
+ }
+ 
+  .calculator .boxes1 .innerb h3{
+      color: black;
+      padding: 5px;
+      font-size: 110%;
+  }
+
+ .calculator .boxes1 .innerb button{
+   color: black;
+   text-decoration: none;
+   padding: 10px;
+   background-color: white;
+   font-weight: bold;
+   margin-top: 5px;
+   cursor: pointer;
+   border: none;
+ }
+
+
+
+
+
+.innerarea .messageHTML{
+  color: red;
+}
+.innerarea .btn{
+  padding: 10px;
+  background-color: white;
+  margin-top: 40px;
+}
+.innerarea .btn a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.innerarea form{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 20px 2px;
+  background-color: grey;
+  flex-direction: column;
+  text-align: center;
+
+}
+.innerarea form label{
+  background-color: white;
+  padding: 10px;
+}
+
+
+.innerarea form button{
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.innerarea .ws{
+  letter-spacing: 2px;
+}
+
+.innerarea .output{
+  text-align: right;
+  font-weight: bold;
+  width: 310px;
+  margin: 0 auto;
+  font-size: 19px;
+}
+
+.innerarea .output .outputSection{
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+
+form .beauty input, select{
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+}

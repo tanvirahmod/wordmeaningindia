@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     
+   <%- include('../partials/head.ejs'); %>
+
+   <title><%= word.replace(/-/g, ' ') %> Meaning in French - French Meaning of <%= word.replace(/-/g, ' ') %> | <%= word.replace(/-/g, ' ') %> फ्रेंच में मतलब at wordmeaningindia.com</title>
+   <meta name="keyword" content="<%= word.replace(/-/g, ' ') %> फ्रेंच में मतलब, हिंदी से फ्रेंच, <%= word.replace(/-/g, ' ') %> का फ्रेंच क्या है " />
+   <meta name="description" content="<%= word.replace(/-/g, ' ') %> %> फ्रेंच अर्थ, ऑनलाइन हिन्दी से फ्रेंच शब्दकोश। <%= word.replace(/-/g, ' ') %> meaning in French,<%= word.replace(/-/g, ' ') %> sens en français">
+   
+    <meta property="og:title" content="<%= word.replace(/-/g, ' ') %> Meaning in French - French Meaning of <%= word.replace(/-/g, ' ') %> | <%= word.replace(/-/g, ' ') %> फ्रेंच में मतलब at wordmeaningindia.com" />
+    <meta property="og:url" content="https://wordmeaningindia.com/hindi-to-french/<%= word%>" />
+    <meta property="og:description" content="<%= word.replace(/-/g, ' ') %> फ्रेंच में मतलब at wordmeaningindia.com" />
+    <meta property="og:site_name" content="wordmeaningindia.com" />
+
+   <link rel="canonical" href="https://wordmeaningindia.com/hindi-to-french/<%= word%>">
+
+   <%- include('../partials/css.ejs'); %>
+
+   <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://wordmeaningindia.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://wordmeaningindia.com/hindi-to-french/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+
+
+<body>
+    <%- include('../partials/header_nav.ejs'); %>
+
+    <div class="area">
+        <div class="word-search">
+            <div class="home-page-header-title">
+                Hindi to French Dictionary
+              </div>
+            <form method="get" action="">
+                <label>
+                    <input type="text" name="query" id="query" value="<%= word.replace(/-/g, ' ') %>" placeholder="Type Word...">
+                </label>
+                <button>Search</button>
+            </form>
+        </div>
+
+        <div class="next-prev">
+            <span class="prev"><a href="/hindi-to-french/<%= info.prev %>"> << <%= info.prev.replace(/-/g, ' ') %></a> </span>
+            <span class="next"><a href="/hindi-to-french/<%= info.next_word %>">  <%= info.next_word.replace(/-/g, ' ') %> >></a></span>
+        </div>
+
+        <!--meaning output section-->
+        <div class="main">
+            <div class="meaning outputs">
+                <h1><%= word.replace(/-/g, ' ') %> Meaning in French</h1><br>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_after_title -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9211312476"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<br>
+
+
+                    <% if(info.meaning){%>
+                    <span class="main-meaning"><%- info.meaning %></span>
+                    <% } %>
+                    
+            </div>
+
+
+            <% if(info.similer_word){%>
+            <div class="similer-words outputs">
+                    <h2>ऐसे ही कुछ और शब्द (more words like this)</h2>
+                    <%let similer = info.similer_word.split("\n");%>
+                    <% similer.forEach((element,i) => { %>
+                        <%- `<a href="/hindi-to-french/${element}">${element.replace(/-/g, ' ')}</a><br>` %>
+                    <% } )%>
+            </div>
+            <% } %>
+
+
+            <% if(info.example){%>
+                <% if(!(info.example.length < 4)){%>
+                <div class="outputs">
+                        <h2><%= word %> फ्रेंच अर्थ का उदाहरण</h2>
+                        
+                        <% let example = info.example.split("\n") %>
+                        <% let out = [...new Set(example)]; %>
+                        <% out.forEach((element,i) => { %>
+                            <p><%- element.replace(/&/g,'"').replace("$","'").replace("$","'") %></p><br>
+                        <% } )%>
+                </div>
+                <% } %>
+            <% } %>
+
+
+
+
+            <div class="othersite outputs">
+                <h2><span class="main-word"><%= word.replace(/-/g, ' ') %></span> Meaning in Other Sites </h2>
+                <ul>
+                    <li><a href="https://translate.google.com/#auto/fr/<%= word%>" rel="noopener" target="_blank">Google Translate</a></li>
+                    <li><a href="https://hi.wikipedia.org/wiki/<%= word%>" rel="noopener" target="_blank">Wikipedia</a></li>
+
+                </ul>
+            </div>
+
+            <!-- below main dev ends -->
+        </div>
+
+
+        <aside>
+            <div class="box">
+                <div class="head">
+                    <h3>Top Words of This Week</h3>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-french/अच्छा">अच्छा</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-french/जयंती">जयंती</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-french/इसका">इसका</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/hindi-to-french/गाँव">गाँव</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+
+        <%- include('../partials/footer.ejs'); %>
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle() {
+            var test = document.getElementById("navbar");
+            if (test.className == "hidden") {
+                test.className = "show";
+            } else {
+                test.className = "hidden";
+            }
+        }
+        
+        
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
+

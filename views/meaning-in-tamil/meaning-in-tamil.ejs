@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <%- include('../partials/head.ejs'); %>
+
+   <title><%= word.replace(/-/g, ' ') %> - Tamil Meaning - <%= word.replace(/-/g, ' ') %> Meaning in Tamil at wordmeaningindia.com | <%= word.replace(/-/g, ' ') %> வார்த்தையின் தமிழ் அர்த்தம் </title>
+   <meta name="keyword" content="<%= word.replace(/-/g, ' ') %>, <%= word.replace(/-/g, ' ') %> Tamil meaning, <%= word.replace(/-/g, ' ') %> meaning, <%= word.replace(/-/g, ' ') %> வார்த்தையின் தமிழ் அர்த்தம், English to Tamil, English to Tamil Dictionary, antonyms, synonyms, அகராதி, 
+   சொற்பொருள், Words, Tamil Academy Dictionary" />
+   <meta name="description" content="<%= word.replace(/-/g, ' ') %> meaning in Tamil - <%- info.meaning.replace(/-/g, ' ')%>; | <%= word.replace(/-/g, ' ') %> தமிழ் பொருள், What is the definition of <%= word.replace(/-/g, ' ') %> in tamil? What is the meaning of <%= word.replace(/-/g, ' ') %> in tamil?">
+   
+   <meta property="og:title" content="<%= word.replace(/-/g, ' ') %> - Tamil Meaning - <%= word.replace(/-/g, ' ') %> Meaning in Tamil at wordmeaningindia.com | <%= word.replace(/-/g, ' ') %> வார்த்தையின் தமிழ் அர்த்தம் " />
+    <meta property="og:url" content="https://wordmeaningindia.com/meaning-in-tamil/<%= word%>" />
+    <meta property="og:description" content="<%= word.replace(/-/g, ' ') %> meaning in Tamil - <%- info.meaning.replace(/-/g, ' ')%>; | <%= word.replace(/-/g, ' ') %> தமிழ் பொருள், What is the definition of <%= word.replace(/-/g, ' ') %> in tamil? What is the meaning of <%= word.replace(/-/g, ' ') %> in tamil?" />
+    <meta property="og:site_name" content="wordmeaningindia.com" />
+
+   <link rel="canonical" href="https://wordmeaningindia.com/meaning-in-tamil/<%= word%>">
+   
+   <%- include('../partials/css.ejs'); %>
+
+   <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://wordmeaningindia.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://wordmeaningindia.com/meaning-in-tamil/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+
+
+<body>
+    <%- include('../partials/header_nav.ejs'); %>
+
+    <div class="area">
+        <div class="word-search">
+            
+            <div class="home-page-header-title">
+                English to Tamil Dictionary
+              </div>
+            <form method="get" action="">
+                <label>
+                    <input type="text" name="query" id="query" value="<%= word.replace(/-/g, ' ') %>" placeholder="Type Word...">
+                </label>
+                <button>Search</button>
+            </form>
+        </div>
+
+        <div class="next-prev">
+            <span class="prev"><a href="/meaning-in-tamil/<%= info.prev %>"> << <%= info.prev.replace(/-/g, ' ') %></a> </span>
+            <span class="next"><a href="/meaning-in-tamil/<%= info.next_word %>">  <%= info.next_word.replace(/-/g, ' ') %> >></a></span>
+        </div>
+        <!--meaning output section-->
+        <div class="main">
+            <div class="meaning outputs">
+                <h1><%= word.replace(/-/g, ' ') %> Meaning in Tamil ( <%= word.replace(/-/g, ' ') %> வார்த்தையின் தமிழ் அர்த்தம்) </h1><br>
+                
+ 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_after_title -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9211312476"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+           
+                
+<br>                
+                
+                <% if(info.meaning){%>
+                 <span class="main-meaning"><%- info.meaning
+                    .replace(/-/g, ' ')%></span>
+                <% } %>
+            </div>
+
+            <% if(info.extra_meaning){%>
+                <div class="outputs">
+                     <p><%- info.extra_meaning %></p>
+                </div>
+            <% } %>
+
+            <% if(info.noun){%>
+            <div class="outputs">
+                <h2>Noun:</h2>
+                 <p><%- info.noun %></p>
+            </div>
+            <% } %>
+
+            <% if(info.verb){%>
+            <div class="outputs">
+                <h2>Verb:</h2>
+                 <p><%- info.verb %></p>
+            </div>
+            <% } %>
+
+            <% if(info.adjective){%>
+            <div class="outputs">
+                <h2>Adjective:</h2>
+                 <p><%- info.adjective %></p>
+            </div>
+            <% } %>
+
+            <% if(info.determiner){%>
+            <div class="outputs">
+                <h2>Determiner:</h2>
+                 <p><%- info.determiner %></p>
+            </div>
+            <% } %>
+
+            <% if(info.adverb){%>
+                <div class="outputs">
+                    <h2>Adverb:</h2>
+                     <p><%- info.adverb %></p>
+                </div>
+            <% } %>
+
+            <% if(info.pronoun){%>
+                <div class="outputs">
+                    <h2>Pronoun:</h2>
+                     <p><%- info.pronoun %></p>
+                </div>
+            <% } %>
+
+            <% if(info.preposition){%>
+                <div class="outputs">
+                    <h2>Preposition:</h2>
+                     <p><%- info.preposition %></p>
+                </div>
+            <% } %>
+
+            <% if(info.conjunction){%>
+                <div class="outputs">
+                    <h2>Conjunction:</h2>
+                     <p><%- info.conjunction %></p>
+                </div>
+            <% } %>
+
+            <% if(info.interjection){%>
+                <div class="outputs">
+                    <h2>Interjection:</h2>
+                     <p><%- info.interjection %></p>
+                </div>
+            <% } %>
+
+
+
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_Mid_1 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="8668510701"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+
+
+
+            <% if(info.similer_words){%>
+                <div class="similer-words outputs">
+                <h2> People Also Search:</h2>
+                <%let similer = info.similer_words.split("\n");%>
+                <% similer.forEach((element,i) => { %>
+                <%- `<a href="/meaning-in-tamil/${element}">${element.replace(/-/g, ' ')}</a><br>` %>
+                <% } )%>
+                </div>
+            <% } %>
+
+            <% if(info.tamil_example.length > 2){%>
+                <div class="outputs">
+                    <h2><%= word.replace(/-/g, ' ') %> தமிழ் அர்த்தத்தின் உதாரணம்:</h2>
+                     <p><%- info.tamil_example.replace(/\n/g, '<br><br>') %></p>
+                </div>
+            <% } %>
+
+            <% if(info.english_example){%>
+                <div class="outputs">
+                    <h2><%= word.replace(/-/g, ' ') %>'s Usage Examples:</h2>
+
+                    <% let example = info.english_example.split("\n") %>
+                    <% let out = [...new Set(example)]; %>
+                    <% out.forEach((element,i) => { %>
+                    <p><%- element.replace(/&/g,'"').replace("$","'").replace("$","'") %></p><br>
+                    <% } )%>
+                    <!-- <p><%- info.english_example.replace(/\n/g, '<br><br>') %></p> -->
+                </div>
+
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_Mid_2 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="2340767891"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+
+            <% } %>
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_after_title -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9211312476"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+            <% if(info.synonym){%>
+                <div class="outputs">
+                    <h2>Synonyms:</h2>
+                     <p><%- info.synonym %></p>
+                </div>
+                
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_Mid_2 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="2340767891"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+                
+            <% } %>
+
+            <% if(info.antonym){%>
+                <div class="outputs">
+                    <h2>Antonyms:</h2>
+                     <p><%- info.antonym %></p>
+                </div>
+            <% } %>
+
+            <div class="othersite outputs">
+                <h2><span class="main-word"><%= word.replace(/-/g, ' ') %></span>'s Meaning in Other Sites </h2>
+                <ul>
+                    <li><a href="https://www.dictionary.com/browse/<%= word%>" rel="noopener" target="_blank">Dictinary</a></li>
+                    <li><a href="https://translate.google.com/#auto/ta/<%= word%>" rel="noopener" target="_blank">Google Translate</a></li>
+                    <li><a href="https://www.merriam-webster.com/dictionary/<%= word%>" rel="noopener" target="_blank">Merriam-Webster</a></li>
+                    <li><a href="https://www.oxfordlearnersdictionaries.com/definition/english/<%= word%>" rel="noopener" target="_blank">Oxford</a></li>
+                </ul>
+            </div>
+
+
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_Mid_2 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="2340767891"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+
+            <!-- below main dev ends -->
+        </div>
+
+
+        <aside>
+            <div class="box">
+                <div class="head">
+                    <h3>Top Words of This Week</h3>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-tamil/justice">Justice</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-tamil/humble">Humble</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-tamil/winter">Winter</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-tamil/worm">Worm</a> </li>
+                    </ul>
+                </div>
+            </div>
+            
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_sitebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9819092222"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+            
+        </aside>
+
+
+
+
+        <%- include('../partials/footer.ejs'); %>
+
+
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle() {
+            var test = document.getElementById("navbar");
+            if (test.className == "hidden") {
+                test.className = "show";
+            } else {
+                test.className = "hidden";
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
+

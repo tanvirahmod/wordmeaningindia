@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <%- include('../partials/head.ejs'); %>
+
+   <title><%= word.replace(/-/g, ' ') %> - telugu Meaning - <%= word.replace(/-/g, ' ') %> Meaning in Telugu at wordmeaningindia.com | <%= word.replace(/-/g, ' ') %> తెలుగు అంటే </title>
+   <meta name="keyword" content="<%= word.replace(/-/g, ' ') %>, <%= word.replace(/-/g, ' ') %> telugu meaning, <%= word.replace(/-/g, ' ') %> meaning, <%= word.replace(/-/g, ' ') %> తెలుగు అంటే, English to telugu, English to telugu Dictionary, antonyms, synonyms, నిఘంటువు,   ఈ పదానికి విద్య అని అర్థం,  Words, Telugu Academy Dictionary" />
+   <meta name="description" content="<%= word.replace(/-/g, ' ') %> meaning in telugu - <%- info.main_meaning.replace(/-/g, ' ')%>; | <%= word.replace(/-/g, ' ') %> తెలుగు అంటే, What is the definition of <%= word.replace(/-/g, ' ') %> in telugu? What is the meaning of <%= word.replace(/-/g, ' ') %> in telugu?">
+   
+   <meta property="og:title" content="<%= word.replace(/-/g, ' ') %> - telugu Meaning - <%= word.replace(/-/g, ' ') %> Meaning in telugu at wordmeaningindia.com | <%= word.replace(/-/g, ' ') %> పదం యొక్క తెలుగు అర్థం " />
+    <meta property="og:url" content="https://wordmeaningindia.com/meaning-in-telugu/<%= word%>" />
+    <meta property="og:description" content="<%= word.replace(/-/g, ' ') %> meaning in telugu - <%- info.main_meaning.replace(/-/g, ' ')%>; | <%= word.replace(/-/g, ' ') %> తెలుగు అర్థం, What is the definition of <%= word.replace(/-/g, ' ') %> in telugu? What is the meaning of <%= word.replace(/-/g, ' ') %> in telugu?" />
+    <meta property="og:site_name" content="wordmeaningindia.com" />
+
+   <link rel="canonical" href="https://wordmeaningindia.com/meaning-in-telugu/<%= word%>">
+   
+   <%- include('../partials/css.ejs'); %>
+
+   <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://wordmeaningindia.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://wordmeaningindia.com/meaning-in-telugu/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+
+
+<body>
+    <%- include('../partials/header_nav.ejs'); %>
+
+    <div class="area">
+        <div class="word-search">
+            
+            <div class="home-page-header-title">
+                English to Telugu Dictionary
+              </div>
+            <form method="get" action="">
+                <label>
+                    <input type="text" name="query" id="query" value="<%= word.replace(/-/g, ' ') %>" placeholder="Type Word...">
+                </label>
+                <button>Search</button>
+            </form>
+        </div>
+
+        <div class="next-prev">
+            <span class="prev"><a href="/meaning-in-telugu/<%= partial.prev_word %>"> << <%= partial.prev_word.replace(/-/g, ' ') %></a> </span>
+            <span class="next"><a href="/meaning-in-telugu/<%= partial.next_word %>">  <%= partial.next_word.replace(/-/g, ' ') %> >></a></span>
+        </div>
+        <!--meaning output section-->
+        <div class="main">
+            <div class="meaning outputs">
+                <h1><%= word.replace(/-/g, ' ') %> Meaning in Telugu ( <%= word.replace(/-/g, ' ') %> తెలుగు అంటే) </h1><br>
+                
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_after_title -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9211312476"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>  
+       
+       
+ <br>      
+                       
+                
+                
+                
+                <% if(info.main_meaning){%>
+                 <span class="main-meaning"><%- info.main_meaning
+                    .replace(/-/g, ' ')%></span>
+                <% } %>
+            </div>
+
+            <% if(info.translate_meaning){%>
+                <div class="outputs">
+                     <p><%- info.translate_meaning %></p>
+                </div>
+            <% } %>
+
+            <% if(info.noun){%>
+            <div class="outputs">
+                <h2>Noun:</h2>
+                 <p><%- info.noun %></p>
+            </div>
+            <% } %>
+
+            <% if(info.verb){%>
+            <div class="outputs">
+                <h2>Verb:</h2>
+                 <p><%- info.verb %></p>
+            </div>
+            <% } %>
+
+            <% if(info.adjective){%>
+            <div class="outputs">
+                <h2>Adjective:</h2>
+                 <p><%- info.adjective %></p>
+            </div>
+            <% } %>
+
+            <% if(info.determiner){%>
+            <div class="outputs">
+                <h2>Determiner:</h2>
+                 <p><%- info.determiner %></p>
+            </div>
+            <% } %>
+
+            <% if(info.adverb){%>
+                <div class="outputs">
+                    <h2>Adverb:</h2>
+                     <p><%- info.adverb %></p>
+                </div>
+            <% } %>
+
+            <% if(info.pronoun){%>
+                <div class="outputs">
+                    <h2>Pronoun:</h2>
+                     <p><%- info.pronoun %></p>
+                </div>
+            <% } %>
+
+            <% if(info.preposition){%>
+                <div class="outputs">
+                    <h2>Preposition:</h2>
+                     <p><%- info.preposition %></p>
+                </div>
+            <% } %>
+
+            <% if(info.conjunction){%>
+                <div class="outputs">
+                    <h2>Conjunction:</h2>
+                     <p><%- info.conjunction %></p>
+                </div>
+            <% } %>
+
+            <% if(info.interjection){%>
+                <div class="outputs">
+                    <h2>Interjection:</h2>
+                     <p><%- info.interjection %></p>
+                </div>
+            <% } %>
+
+
+
+
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_Mid_1 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="8668510701"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+
+
+
+
+            <% if(partial.similer_word){%>
+                <div class="similer-words outputs">
+                <h2> People Also Search:</h2>
+                <%let similer = partial.similer_word.split("\n");%>
+                <% similer.forEach((element,i) => { %>
+                <%- `<a href="/meaning-in-telugu/${element}">${element.replace(/-/g, ' ')}</a><br>` %>
+                <% } )%>
+                </div>
+            <% } %>
+
+            <% if(info.telugu_example.length > 2){%>
+                <div class="outputs">
+                    <h2><%= word.replace(/-/g, ' ') %> తెలుగు అర్థానికి ఉదాహరణ:</h2>
+                     <p><%- info.telugu_example.replace(/\n/g, '<br><br>') %></p>
+                </div>
+            <% } %>
+
+            <% if(partial.english_example){%>
+                <div class="outputs">
+                    <h2><%= word.replace(/-/g, ' ') %>'s Usage Examples:</h2>
+
+                    <% let example = partial.english_example.split("\n") %>
+                    <% let out = [...new Set(example)]; %>
+                    <% out.forEach((element,i) => { %>
+                    <p><%- element.replace(/&/g,'"').replace("$","'").replace("$","'") %></p><br>
+                    <% } )%>
+                    <!-- <p><%- partial.english_example.replace(/\n/g, '<br><br>') %></p> -->
+                </div>
+            <% } %>
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="9790483702"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+            <% if(partial.synonym){%>
+                <div class="outputs">
+                    <h2>Synonyms:</h2>
+                     <p><%- partial.synonym %></p>
+                </div>
+                
+                
+            <br>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+                 crossorigin="anonymous"></script>
+            <!-- WMI_Mid_2 -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:468px;height:60px"
+                 data-ad-client="ca-pub-4942404864764189"
+                 data-ad-slot="2340767891"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <br>
+                  
+            <% } %>
+
+
+
+            <% if(partial.antonym){%>
+                <div class="outputs">
+                    <h2>Antonyms:</h2>
+                     <p><%- partial.antonym %></p>
+                </div>
+                
+                
+            <br>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+                 crossorigin="anonymous"></script>
+            <!-- WMI_Mid_2 -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:468px;height:60px"
+                 data-ad-client="ca-pub-4942404864764189"
+                 data-ad-slot="2340767891"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <br>
+                 
+                
+            <% } %>
+            
+            
+
+            <div class="othersite outputs">
+                <h2><span class="main-word"><%= word.replace(/-/g, ' ') %></span>'s Meaning in Other Sites </h2>
+                <ul>
+                    <li><a href="https://www.dictionary.com/browse/<%= word%>" rel="noopener" target="_blank">Dictinary</a></li>
+                    <li><a href="https://translate.google.com/#auto/te/<%= word%>" rel="noopener" target="_blank">Google Translate</a></li>
+                    <li><a href="https://www.merriam-webster.com/dictionary/<%= word%>" rel="noopener" target="_blank">Merriam-Webster</a></li>
+                    <li><a href="https://www.oxfordlearnersdictionaries.com/definition/english/<%= word%>" rel="noopener" target="_blank">Oxford</a></li>
+                </ul>
+            </div>
+
+
+
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+     crossorigin="anonymous"></script>
+<!-- WMI_Mid_2 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-4942404864764189"
+     data-ad-slot="2340767891"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+
+
+
+
+            <!-- below main dev ends -->
+        </div>
+
+
+        <aside>
+            <div class="box">
+                <div class="head">
+                    <h3>Top Words of This Week</h3>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-telugu/justice">Justice</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-telugu/humble">Humble</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-telugu/winter">Winter</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/meaning-in-telugu/worm">Worm</a> </li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4942404864764189"
+             crossorigin="anonymous"></script>
+        <!-- WMI_sitebar -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4942404864764189"
+             data-ad-slot="9819092222"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <br>
+              
+            
+        </aside>
+
+
+
+
+        <%- include('../partials/footer.ejs'); %>
+
+
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle() {
+            var test = document.getElementById("navbar");
+            if (test.className == "hidden") {
+                test.className = "show";
+            } else {
+                test.className = "hidden";
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
+

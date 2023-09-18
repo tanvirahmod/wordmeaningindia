@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WordMeaningIndia | Hindi to Hindi Dictionary | Hindi Meaning Of Any Word</title>
+    <meta name="description"
+        content="WordMeaningIndia | Learn The Meaning of Any hindi Word in hindi Lenguage With Examples.">
+      <link rel="canonical" href="https://wordmeaningindia.com/hindi-to-hindi"/>
+   <%- include('../partials/head.ejs'); %>
+   <%- include('../partials/css.ejs'); %>
+</head>
+
+
+<body>
+    <%- include('../partials/header_nav.ejs'); %>
+
+    <div class="area">
+        <div class="word-search">
+            <div class="home-page-header-title">
+                Hindi to Hindi Dictionary
+              </div>
+            <form method="get" action="">
+                <label>
+                    <input type="text" name="query" id="query" placeholder="Type Word...">
+                </label>
+                <button>Search</button>
+            </form>
+        </div>
+
+
+        <!--meaning output section-->
+        <div class="main">
+
+
+            <div class="othersite outputs">
+                <center>
+                    <h1>WordMeaningIndia hindi to hindi Dictionary</h1>
+                    <p>Our hindi dictionary database is largest on the internet. We added about 60k words so you can find any meaning in one click.</p>
+                    <p>We are not just providing short meaning, we give you various variations of meaning and very useful usages and examples also.</p>
+                    <br><br>
+                    <h3>Learn hindi Fast</h3>
+                    <p>We are adding hindi and others resources to learn meaning fast and easily.</p>
+                    <p>Keep practicing here and learn new words everyday.</p>
+                </center>
+            </div>
+
+
+
+            <!-- Bonous Section -->
+
+
+
+            <!-- below main dev ends -->
+        </div>
+
+
+        <aside>
+            <div class="box">
+                <div class="head">
+                    <h3>Top Words of This Week</h3>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li> <a href="https://wordmeaningindia.com/dictionary/hope">Hope</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/dictionary/suffer">Suffer</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/dictionary/fair">Fair</a> </li>
+                        <li> <a href="https://wordmeaningindia.com/dictionary/funk">Funk</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+
+
+
+        <%- include('../partials/footer.ejs'); %>
+
+
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle() {
+            var test = document.getElementById("navbar");
+            if (test.className == "hidden") {
+                test.className = "show";
+            } else {
+                test.className = "hidden";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
