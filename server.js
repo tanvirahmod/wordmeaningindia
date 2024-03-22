@@ -20,6 +20,8 @@ const en2odiaRouter = require('./routes/meaning-in-odia.js')
 const en2punjabiRouter = require('./routes/meaning-in-punjabi.js')
 // full form in hindi language
 const fullformhindiRouter = require('./routes/full-form-hindi.js')
+// full form category in english
+const fullformcategoryRouter = require('./routes/full-form-category.js')
 
 
 
@@ -52,6 +54,8 @@ app.use('/meaning-in-odia', en2odiaRouter)
 app.use('/meaning-in-punjabi', en2punjabiRouter)
 // full form in hindi langulage
 app.use('/full-form-hindi', fullformhindiRouter)
+// full form in category
+app.use('/full-form-category', fullformcategoryRouter)
 
 
 
@@ -335,14 +339,120 @@ app.get('/sitemap-fullform5.xml', async function(req, res, next){
   res.sendFile(__dirname + '/public/sitemaps/sitemap-fullform5.xml');
 })
 
+app.get('/fullform-cat-1.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-1.xml');
+})
 
+app.get('/fullform-cat-2.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-2.xml');
+})
 
+app.get('/fullform-cat-3.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-3.xml');
+})
 
+app.get('/fullform-cat-4.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-4.xml');
+})
 
+app.get('/fullform-cat-5.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-5.xml');
+})
 
+app.get('/fullform-cat-6.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-6.xml');
+})
 
+app.get('/fullform-cat-7.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-7.xml');
+})
 
+app.get('/fullform-cat-8.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-8.xml');
+})
 
+app.get('/fullform-cat-9.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-9.xml');
+})
+
+app.get('/fullform-cat-10.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-10.xml');
+})
+
+app.get('/fullform-cat-11.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-11.xml');
+})
+
+app.get('/fullform-cat-12.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-12.xml');
+})
+
+app.get('/fullform-cat-13.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-13.xml');
+})
+
+app.get('/fullform-cat-14.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-14.xml');
+})
+
+app.get('/fullform-cat-15.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-15.xml');
+})
+
+app.get('/fullform-cat-16.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-16.xml');
+})
+
+app.get('/fullform-cat-17.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-17.xml');
+})
+
+app.get('/fullform-cat-18.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-18.xml');
+})
+
+app.get('/fullform-cat-19.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-19.xml');
+})
+
+app.get('/fullform-cat-20.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-20.xml');
+})
+
+app.get('/fullform-cat-21.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-21.xml');
+})
+
+app.get('/fullform-cat-22.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-22.xml');
+})
+
+app.get('/fullform-cat-23.xml', async function(req, res, next){
+  res.set('Content-Type', 'text/xml')
+  res.sendFile(__dirname + '/public/sitemaps/fullform-cat-23.xml');
+})
 
 app.use('/robots.txt', function (req, res, next) {
   res.type('text/plain')
@@ -365,4 +475,4 @@ app.use(function(req, res, next) {
   }
 
 });
-app.listen(4000)
+app.listen(3001)

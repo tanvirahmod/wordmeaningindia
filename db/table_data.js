@@ -101,7 +101,7 @@ function getPunjabi(input) {
 }
 
 // acronyms database...................................
-function getAllAcronym(input) {
+function getAllAcronym(input, category) {
     return knex("acronymall").where("shortform", 'like', `${input}`);
 }
 
@@ -114,7 +114,20 @@ function getSimilerAcronym(id) {
     return knex("acronymsingle").whereIn('id', [id - 16, id - 15, id - 14, id - 13, id - 12, id - 11, id - 10, id - 9, id - 8, id - 7, id - 6, id - 5, id - 4, id - 3, id - 2, id - 1, id, id + 1, id + 2, id + 3, id + 4, id + 5, id + 6, id + 7, id + 8, id + 9, id + 10, id + 11, id + 12, id + 13, id + 14, id + 15, id + 16]).select("shortform");
 }
 
+// acronyms in category functions
+function getOneAcronymCategory(input) {
+    return knex("acronymsingle").where("shortform", input).first();
+}
 
+// acronyms database...................................
+function getAllAcronymCategory(input, category) {
+    return knex("acronymall").where("shortform", 'like', `${input}`).andWhere("category", 'like', `%${category}%`);
+}
+
+// similer 
+function getSimilerAcronymCategory(id) {
+    return knex("acronymsingle").whereIn('id', [id - 16, id - 15, id - 14, id - 13, id - 12, id - 11, id - 10, id - 9, id - 8, id - 7, id - 6, id - 5, id - 4, id - 3, id - 2, id - 1, id + 1, id + 2, id + 3, id + 4, id + 5, id + 6, id + 7, id + 8, id + 9, id + 10, id + 11, id + 12, id + 13, id + 14, id + 15, id + 16]).select("shortform","category");
+}
 
 
 
@@ -142,7 +155,12 @@ module.exports = {
     getKannada,
     getOdia,
     getPunjabi,
+
     getAllAcronym,
     getOneAcronym,
-    getSimilerAcronym
+    getSimilerAcronym,
+
+    getAllAcronymCategory,
+    getSimilerAcronymCategory,
+    getOneAcronymCategory
 }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Full Forms or Abbreviations</title>
+    <meta name="description"
+        content="WordMeaningIndia | Our full form English database is one of the largest on the internet. We have added about almost 1 million acronyms so you can find any full form in one click.">
+    <link rel="canonical" href="https://wordmeaningindia.com/full-form-category" />
+    <%- include('../partials/head.ejs'); %>
+        <%- include('../partials/css.ejs'); %>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <h1> <a href="/">Word Meaning India</a> </h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="button">
+            <p onclick="toggle()">MENUS ︾</p>
+        </div>
+        <ul id="navbar" class="hidden">
+            <li><a href="/meaning-in-hindi" class="active one">English to Hindi</a></li>
+            <li><a href="/hindi-to-english" class="active two">Hindi to English</a></li>
+            <li><a href="/hindi-to-hindi" class="active three">Hindi to Hindi</a></li>
+            <li><a href="/full-form-category" class="active three">Full Form</a></li>
+        </ul>
+    </nav>
+
+    <div class="area">
+        <div class="word-search">
+            <div class="home-page-header-title">
+                Search Abbreviations
+            </div>
+            <form method="get" action="">
+                <label>
+                    <input type="text" name="query" id="query" placeholder="Type Short Form...">
+                </label>
+                <button>Search</button>
+            </form>
+        </div>
+
+
+        <!--meaning output section-->
+        <div class="main">
+
+
+            <div class="outputs">
+                <center>
+                    <h1>WordMeaningIndia Full Forms or Abbreviations</h1>
+                    <p>Our full form English database is one of the largest on the internet. We have added about almost
+                        1 million acronyms so you can find any full form in one click.</p>
+                    <p>We are not just providing single abbreviation, we give you various variations of full forms and
+                        very useful acronyms.</p>
+                    <br><br>
+                    <h3>Learn Abbreviation Fast</h3>
+                    <p>We are adding More abbreviation in various category.</p>
+                    <p>Keep practicing here and learn new abbreviation everyday.</p>
+                </center>
+            </div>
+
+
+
+            <!-- Bonous Section -->
+
+
+
+
+
+
+
+            <!-- below main dev ends -->
+        </div>
+
+
+        <aside>
+            <div class="box">
+                <div class="head">
+                    <h3>Top Acronyms of This Week</h3>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li> <a href="/full-form-category/MER-full-form-in-Business">MER full form</a> </li>
+                        <li> <a href="/full-form-category/RICO-full-form-in-Business">RICO full form</a> </li>
+                        <li> <a href="/full-form-category/BIB-full-form-in-Business">BIB full form</a> </li>
+                        <li> <a href="/full-form-category/PPPPPPP-full-form-in-Governmental">PPPPPPP full form</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+
+
+
+        <%- include('../partials/footer.ejs'); %>
+
+
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle() {
+            var test = document.getElementById("navbar");
+            if (test.className == "hidden") {
+                test.className = "show";
+            } else {
+                test.className = "hidden";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
