@@ -1,0 +1,217 @@
+ssh ubuntu@144.217.84.167
+ssh root@104.247.108.11
+wget https://url.com for server large file download
+sudo netstat -tnlp // port check for all your apps
+
+
+
+#Setup NextJS on Digital Ocean Ubuntu server Terminal Commands
+#based on my YouTube video
+
+#login to server
+ssh root@ip_address
+
+#Upgrade Server
+sudo apt update && sudo apt upgrade
+
+#Install NGINX and Certbot
+sudo apt install nginx certbot python3-certbot-nginx
+
+#Allow Firewall Access
+sudo ufw allow "Nginx Full"
+ufw allow OpenSSH
+ufw enable
+
+#Install NPM
+apt install npm
+
+#Install pm2
+npm install -g pm2
+
+#Check pm2 is working
+pm2 status
+
+#go to www root
+cd /var/www
+
+#install nvm and nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+exec $SHELL
+nvm install --lts
+
+#Create NextJS App directory
+mkdir name_of_your_app
+
+#Go inside new app directory
+cd name_of_your_app
+
+#run these two commant For Ubuntu, this PPA provides the latest stable upstream Git version
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt install git
+
+#check new version of git by
+git verison
+
+#now loin to github
+git config --global user.name <user name>
+git config --global user.mail <your github mail>
+
+#if needed
+rm -rf dirname #force remove directory
+cd .. #for going back directory
+
+#for cloning git reposatory
+git clone <your https github link>
+
+#(if you cloned the repo from somewhere else, make sure to npm install first
+npm install)
+
+#install all packeges
+npm install
+
+#Build it
+npm run build
+
+#Create NGINX config file and edit it
+cd /etc/nginx/sites-available
+touch name_of_app
+nano name_of_app
+
+#nginx config file for Nextjs App
+#place in /etc/nginx/sites-available/name_of_config_file
+server {
+        listen 80;
+        server_name livecricket.watch www.livecricket.watch;
+
+        gzip on;
+        gzip_proxied any;
+        gzip_types application/javascript application/x-javascript text/css text/javascript;
+        gzip_comp_level 5;
+        gzip_buffers 16 8k;
+        gzip_min_length 256;
+
+        location /_next/static/ {
+                alias /var/www/cricket-site/.next/static/;
+                expires 365d;
+                access_log off;
+        }
+
+        location / {
+                proxy_pass http://127.0.0.1:3004; #change to 3001 for second app, but make sure second nextjs app starts on new port in packages.json "start": "next start -p 3001",
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+}
+
+for express site --------------------
+server {
+	listen 80;
+        server_name apk-news.com www.apk-news.com;
+
+        gzip on;
+        gzip_proxied any;
+        gzip_types application/javascript application/x-javascript text/css text/javascript;
+        gzip_comp_level 5;
+        gzip_buffers 16 8k;
+        gzip_min_length 256;
+
+        location / {
+                proxy_pass http://127.0.0.1:3007; #change to 3001 for second app, but make sure second nextjs app starts on new port in packages.json "start": "next start -p 3001",
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+
+}
+
+
+
+
+
+
+left click to paste, ctrl s to save, ctrl x to exit
+
+now go back to root@tanvir:/etc/nginx# and type nano nginx.conf
+
+now change include /etc/nginx/sites-enable/*; to include /etc/nginx/sites-available/*;
+
+now restart system by typing: systemctl restart nginx
+
+now remove defauld folder by going /etc/nginx/sites-available and type: rm default
+
+now remove again defalt folder form root@tanvir:/etc/nginx/sites-enabled# again by same as before.
+
+now restart nginx again : root@tanvir:/etc/nginx/sites-enabled# systemctl restart nginx
+
+#Go to site directory and launch it with pm2
+cd /var/www/name_of_app
+
+#launch app with pm2
+pm2 start npm --name meaninginhindi-wiki -- start
+pm2 start npm --name sobdartho -- start
+pm2 start npm --name wordmeaningindia -- start
+pm2 start npm --name wordmeaningonline -- start
+pm2 start npm --name blog-sobdartho -- start
+pm2 start npm --name letsmakegame-dot-com -- start
+pm2 start npm --name cricket-site -- start
+pm2 start npm --name gcamapk -- start
+
+#Create SSL with letsencryot
+sudo certbot --nginx -d apk-news.com -d www.apk-news.com #then pres a and y and 2
+now restart the system : systemctl restart nginx
+
+
+
+
+
+————— helpful commands ————
+pm2 start npm --name cricket-site -- start  (make sure you're inside the site's directory first)
+systemctl restart nginx (restart NGINX)
+sudo certbot --nginx -d domainname.com (Add SSL)
+[SEE OTHER GIST FOR CONFIG FILE CONTENTS] 
+#https://gist.github.com/oelbaga/5019647715e68815c602ff05cff2416e#file-ubuntu-nextjs-nginx-config-file
+
+#Option1 Syslink the file in sites-enabled
+sudo ln -s /etc/nginx/sites-available/name_of_app /etc/nginx/sites-enabled/name_of_app
+
+#Option 2 No need to use sites-enabled
+nano /etc/nginx/nginx.conf  
+change  include /etc/nginx/sites-enabled/*; to  include /etc/nginx/sites-available/*;
+
+#make Sure NGINX file is good
+nginx -t
+
+#remove the default config files
+cd /etc/nginx/sites-available
+rm default
+cd /etc/nginx/sites-enabled
+rm default
+
+#restart NGINX to reload config files
+systemctl restart nginx
+
+#Go to site directory and launch it with pm2
+cd /var/www/name_of_app
+
+#launch app with pm2
+pm2 start npm --name name_of_app -- start
+
+#Create SSL with letsencryot
+sudo certbot --nginx -d domainname.com
+
+
+
+————— helpful commands ————
+pm2 start npm --name name_of_app -- start  (make sure you're inside the site's directory first)
+systemctl restart nginx (restart NGINX)
+sudo certbot --nginx -d domainname.com (Add SSL)
+
+
+--------- port check
+netstat -tulpn
+curl http://localhost:3004
